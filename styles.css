@@ -1,0 +1,155 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+body {
+    background-color: rgb(230, 170, 219);
+    
+}
+
+.timer {
+    color: white;
+    font-size: 1.3em;
+    border: 2px dashed rgb(255, 0, 174);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button {
+    outline: none;
+    background-color: rgb(255, 0, 174);
+    color: white;
+    height: 2.5em;
+    padding: 5px;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.outer-container {
+   
+    height: 100vh;
+}
+
+.top-bar{
+    /* */
+   padding: 50px;
+   
+    
+}
+.top-bar .timer {
+    background-color: rgb(230, 170, 219);
+    float: right;
+    
+}
+
+.inner-container{
+    height: 70%;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgb(255, 161, 79);
+    border: 2px dashed rgb(255, 0, 174);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+header, main{
+    color: rgb(255, 0, 174);
+    text-align: center;
+    padding: 15px;
+}
+header{
+    display: block;
+}
+
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.go-button {
+    display: block;
+    margin: auto;
+    
+}
+.go-button:hover {
+    cursor: pointer;
+}
+
+.answer-list {
+    list-style: none;
+    padding: 10px;
+    padding:
+}
+
+.answer-btn:hover {
+    cursor: pointer;
+}
+main {
+    /*display: none;*/
+}
+
+
+/* your score Screen*/
+
+.question-screen {
+    display: none;
+}
+
+.next-btn {
+
+    margin-top: 40px;
+}
+
+.finish-screen {
+    display: none;
+}
+
+.highscores{
+    display: none;
+}
+
+ol{
+    
+    font-size: 1.5em;
+    text-align: start;
+    padding-left: auto;
+    padding-top: 15px;
+    line-height: 35px;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.try-button:hover{
+    cursor:pointer;
+}
+
+
+/*.highscores ol {
+    overflow-y: scroll;
+    max-height: 150px;
+}*/

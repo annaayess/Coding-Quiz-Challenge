@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz!</title>
+    <link rel = "stylesheet" href="./styles.css">
+</head>
+<body>
+    <!--outer div-->
+    <div class="outer-container">
+        <!--top bar div section-->
+        <div class="top-bar">
+            <button>View Highscores</button>
+            <p class="timer"> Timer: 00:00</p>
+        </div>
+        <!--inner div-->
+        <div class="inner-container">
+<!--main header div-->
+<!--phase 1-->
+            <header class="quiz-intro">
+<h1>Ready to test your Web Dev Knowledge?</h1>
+<p>You'll have 60 seconds to complete all the questions- 
+    but if you get a question wrong 5 seconds will be deducted! 
+    To start the quiz, click the button below!</p>
+    <button class ="go-button"> READY, SET... GO!</button>
+            </header>
+            <!--main quiz content-->
+            <main>
+                <section class="question-screen">
+                <h2 id="question">Question Here</h2>
+                <ul id="answer-buttons">
+                    <li class="answer-list"><button class="answer-btn">Answer 1</button></li>
+                    <li class="answer-list"><button class="answer-btn">Answer 2</button></li>
+                    <li class="answer-list"><button class="answer-btn">Answer 3</button></li>
+                    <li class="answer-list"><button class="answer-btn">Answer 4</button></li>
+                </ul>
+                <div>
+                <button class="next-btn">Next Question</button>
+                </div>
+            </section>
+<!--PHASE 3-->
+            <section class="finish-screen">
+                <h2> You're done!</h2>
+                <p>Your Score: 00</p>
+                <div>
+                <label>Enter initials: </label>
+                <input type="text">
+                <button class="submit-button">Submit</button>
+                </div>
+            </section>
+<!--PHASE 4-->
+            <section class="highscores">
+                <h2>Highscores:</h2>
+                <ol type="1">
+                    <li>AY - 20</li>
+                    <li>AY - 16</li>
+                    <li>LG - 12</li>
+                    <li>TV - 9</li>
+                    <li>YR - 2</li>
+                    
+                </ol>
+                <button class="try-button">Try again?</button>
+            </section>
+
+
+            </main>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
