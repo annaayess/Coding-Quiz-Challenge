@@ -29,10 +29,13 @@ button {
     padding: 5px;
     font-size: 1.3em;
     border-radius: 5px;
+
 }
 
 button:hover {
     cursor: pointer;
+
+    border-color: white;
 }
 
 .outer-container {
@@ -89,23 +92,35 @@ p {
     font-size: 1.5em;
 }
 
-.go-button {
+#go-button {
     display: block;
     margin: auto;
+    margin-top: 50px;
+    padding: 10px;
     
 }
-.go-button:hover {
+#go-button:hover {
     cursor: pointer;
+    border-color: white;
+}
+#answer-buttons{
+    display: none; /*grid!*/
+    grid-template-columns: repeat(2, auto);
+    margin-top: 20px;
 }
 
 .answer-list {
     list-style: none;
+    padding: 15px;
+}
+
+.answer-btn {
     padding: 10px;
-    padding:
 }
 
 .answer-btn:hover {
     cursor: pointer;
+    border-color: white;
 }
 main {
     /*display: none;*/
@@ -121,6 +136,17 @@ main {
 .next-btn {
 
     margin-top: 40px;
+
+    padding: 10px;
+
+}
+
+
+.next-btn:hover {
+
+    margin-top: 40px;
+
+    border-color: white;
 }
 
 .finish-screen {
@@ -142,10 +168,14 @@ ol{
 
 .submit-button:hover {
     cursor: pointer;
+
+    border-color: white;
 }
 
 .try-button:hover{
-    cursor:pointer;
+    cursor: pointer;
+
+    border-color: white;
 }
 
 

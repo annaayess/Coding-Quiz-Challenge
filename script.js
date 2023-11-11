@@ -1,3 +1,23 @@
+const goButton = document.getElementById('go-button')
+const questionScreen = document.getElementById('question-screen')
+goButton.addEventListener('click', startQuiz)
+
+
+
+function startQuiz() {
+    console.log('Started Quiz')
+    goButton.classList.add('hide')
+    questionScreen.classList.remove('hide')
+
+}
+
+function nextQuestion() {
+
+}
+
+function selectAnswer(){
+
+}
 const questions = [
     {
         question: "What does HTML stand for?",
@@ -49,7 +69,12 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("answer-buttons");
 
+
+
 let currentQuestionIndex = 0;
-let score = 0;
+let score = 0; 
+
+
+
 
 
