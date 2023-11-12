@@ -1,18 +1,35 @@
 const goButton = document.getElementById('go-button')
 const questionScreen = document.getElementById('question-screen')
 goButton.addEventListener('click', startQuiz)
+const questionElement = document.getElementById('question')
 
+
+const answerButtons = document.getElementById('answer-btn')
+const nextButton = document.getElementById('next-btn')
 
 
 function startQuiz() {
     console.log('Started Quiz')
     goButton.classList.add('hide')
     questionScreen.classList.remove('hide')
+    nextQuestion()
 
 }
 
 function nextQuestion() {
 
+}
+
+function showQuestion(question) {
+    questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.classList.add('btn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+    })
 }
 
 function selectAnswer(){
@@ -64,10 +81,6 @@ const questions = [
         ]
     }
 ];
-
-const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("answer-buttons");
 
 
 

@@ -18,7 +18,7 @@
         <div class="inner-container">
 <!--main header div-->
 <!--phase 1-->
-            <header class="quiz-intro">
+            <header class="quiz-intro hide">
 <h1>Ready to test your Web Dev Knowledge?</h1>
 <p>You'll have 60 seconds to complete all the questions- 
     but if you get a question wrong 5 seconds will be deducted! 
@@ -27,16 +27,16 @@
             </header>
             <!--main quiz content-->
             <main>
-                <section class="question-screen hide">
+                <section id="question-screen" class= "hide">
                 <h2 id="question">Question Here</h2>
-                <ul id="answer-buttons">
-                    <li class="answer-list"><button class="answer-btn">Answer 1</button></li>
-                    <li class="answer-list"><button class="answer-btn">Answer 2</button></li>
-                    <li class="answer-list"><button class="answer-btn">Answer 3</button></li>
-                    <li class="answer-list"><button class="answer-btn">Answer 4</button></li>
+                <ul id="answer-buttons-list">
+                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 1</button></li>
+                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 2</button></li>
+                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 3</button></li>
+                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 4</button></li>
                 </ul>
                 <div>
-                <button class="next-btn">Next Question</button>
+                <button id="next-btn" class="next-btn hide">Next Question</button>
                 </div>
             </section>
 <!--PHASE 3-->

@@ -29,6 +29,9 @@ button {
     padding: 5px;
     font-size: 1.3em;
     border-radius: 5px;
+    border: solid 2px;
+    border-color: rgb(255, 161, 79);
+    
 
 }
 
@@ -97,14 +100,20 @@ p {
     margin: auto;
     margin-top: 50px;
     padding: 10px;
+    border: solid rgb(230, 170, 219);
     
 }
 #go-button:hover {
     cursor: pointer;
     border-color: white;
+    border: solid;
 }
-#answer-buttons{
-    display: none; /*grid!*/
+
+.hide {
+    display: none;
+}
+#answer-buttons-list{
+    display: grid; /*grid!*/
     grid-template-columns: repeat(2, auto);
     margin-top: 20px;
 }
@@ -116,6 +125,7 @@ p {
 
 .answer-btn {
     padding: 10px;
+    border: solid rgb(230, 170, 219);
 }
 
 .answer-btn:hover {
@@ -129,23 +139,22 @@ main {
 
 /* your score Screen*/
 
-.question-screen {
-    display: none;
+#question-screen {
+    display: block;
 }
 
-.next-btn {
+#next-btn {
 
     margin-top: 40px;
-
+    border: solid rgb(230, 170, 219);
     padding: 10px;
 
 }
 
 
-.next-btn:hover {
+#next-btn:hover {
 
     margin-top: 40px;
-
     border-color: white;
 }
 
@@ -164,6 +173,10 @@ ol{
     padding-left: auto;
     padding-top: 15px;
     line-height: 35px;
+}
+
+.submit-botton {
+    border: solid rgb(230, 170, 219);
 }
 
 .submit-button:hover {
