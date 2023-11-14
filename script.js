@@ -68,11 +68,11 @@ const questions = [
     }
 ]; 
 
-// Docuemnt Object Model (DOM)
+
 
 function startQuiz() {
     console.log('Started Quiz')
-    mainMenu.style.display = "none"; // hide the main menu screen
+    mainMenu.style.display = "none";
     questionScreen.style.display = "block";
     goButton.classList.add('hide')
     questionScreen.classList.remove('hide')
@@ -84,7 +84,7 @@ function startTimer(){
     timer = setInterval(function() {
         score = score - 1;
         document.getElementById("score").innerHTML = "00:"+score;
-    }, 1000); // miliseconds 1000 = 1 second
+    }, 1000);
 }
 
 function stopTimer(){
@@ -116,21 +116,18 @@ function showQuestion(question) {
 
 function selectAnswer(answerIdx){
 
-    // penalty to the score if the answer is wrong
+    
     console.log(currentQuestionIndex)
     if(questions[currentQuestionIndex].answers[answerIdx].correct != true){
         score = score - 10;
     }
-    // other wise just move on
+    
 
-    currentQuestionIndex++; // next question index
+    currentQuestionIndex++; 
 
     // If this is the last question - move on to the highscore screen
     if(questions.length === currentQuestionIndex || score <= 0){
-        // 1 == 1   -> true
-        // 1 == "1" -> true
-        // 1 === 1 -> ture
-        // 1 === "1" -> false (not the smae type)
+        
         endQuiz()
     }
     else{
@@ -160,7 +157,7 @@ function showHighScores(){
 
     // get all the scores from the object sorting them by an descending order
     let scores = Object.keys(highScores).map((item, index) => parseInt(item)).sort().reverse();
-    // example: [30,25,20]
+   
 
     for(let i = 0; i < scores.length; i++)
     {
