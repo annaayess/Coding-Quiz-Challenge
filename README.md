@@ -5,7 +5,8 @@ The purpose of this challenge was to use HTML, CSS and JavaScript languages to c
 Included below are sample images of the quiz at different stages of the experience as well as a link to the deployed webpage below!
 <img width="1653" alt="Screenshot 2023-11-13 at 9 38 30 PM" src="https://github.com/annaayess/Coding-Quiz-Challenge/assets/147208430/0372d2f0-0171-408a-9eed-90fa97c38d03">
 <img width="1643" alt="Screenshot 2023-11-13 at 9 38 36 PM" src="https://github.com/annaayess/Coding-Quiz-Challenge/assets/147208430/34e47607-36e7-463f-b92f-723fc548c594">
-<img width="1660" alt="Screenshot 2023-11-13 at 9 39 27 PM" src="https://github.com/annaayess/Coding-Quiz-Challenge/assets/147208430/dc9201b1-5588-484b-946a-a5955ce79579">
+<img width="1682" alt="Screenshot 2023-11-13 at 9 38 57 PM" src="https://github.com/annaayess/Coding-Quiz-Challenge/assets/147208430/6e197cee-86a2-4706-b0af-8aa8ba18a0ab">
+
 
 ## Link to the Coding Quiz
 **********
