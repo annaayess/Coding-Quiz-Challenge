@@ -176,11 +176,9 @@ function showHighScores(){
 
 function endQuiz(){
 
-    score = score < 0 ? 0 : score;
-    // same thing as
-    // if(score < 0){
-    //     score = 0;
-    // }
+    if(score < 0){
+        score = 0;
+ }
     
     questionScreen.style.display = "none";
     endScreen.style.display = "block"; 
