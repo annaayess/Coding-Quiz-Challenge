@@ -18,3 +18,5 @@ Pull requests are welcome! For any requests for changes, please open an issue fi
 Please make sure to update tests as appropriate.
 ## License
 MIT (https://choosealicense.com/licenses/mit/)
+## Acknowledgements
+I worked very hard on this challenge but have received help on my code from a tutor as well as inspiration for code and understanding of it from content found online.
