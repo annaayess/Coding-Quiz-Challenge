@@ -11,8 +11,8 @@
     <div class="outer-container">
         <!--top bar div section-->
         <div class="top-bar">
-            <button>View Highscores</button>
-            <p class="timer"> Timer: 00:00</p>
+            <button id="highscore-btn">View Highscores</button>
+            <p class="timer"> Timer: <span id="score">00:00</span></p>
         </div>
         <!--inner div-->
         <div class="inner-container">
@@ -30,10 +30,10 @@
                 <section id="question-screen" class= "hide">
                 <h2 id="question">Question Here</h2>
                 <ul id="answer-buttons-list">
-                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 1</button></li>
-                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 2</button></li>
-                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 3</button></li>
-                    <li class="answer-list" id="answer-btn"><button class="answer-btn btn">Answer 4</button></li>
+                    <li class="answer-list" id="answer-a"><button class="answer-btn btn">Answer 1</button></li>
+                    <li class="answer-list" id="answer-b"><button class="answer-btn btn">Answer 2</button></li>
+                    <li class="answer-list" id="answer-c"><button class="answer-btn btn">Answer 3</button></li>
+                    <li class="answer-list" id="answer-d"><button class="answer-btn btn">Answer 4</button></li>
                 </ul>
                 <div>
                 <button id="next-btn" class="next-btn hide">Next Question</button>
@@ -42,25 +42,24 @@
 <!--PHASE 3-->
             <section class="finish-screen">
                 <h2> You're done!</h2>
-                <p>Your Score: 00</p>
+                <p>Your Score: <span id="final-score">00</span></p>
                 <div>
                 <label>Enter initials: </label>
-                <input type="text">
-                <button class="submit-button">Submit</button>
+                <input type="text" id="player-name">
+                <button class="submit-button" id="submit-score">Submit</button>
                 </div>
             </section>
 <!--PHASE 4-->
             <section class="highscores">
                 <h2>Highscores:</h2>
-                <ol type="1">
+                <ol type="1" id="highscore-list">
                     <li>AY - 20</li>
                     <li>AY - 16</li>
                     <li>LG - 12</li>
                     <li>TV - 9</li>
                     <li>YR - 2</li>
-                    
                 </ol>
-                <button class="try-button">Try again?</button>
+                <button class="try-button" id="restart-quiz">Try again?</button>
             </section>
 
 
